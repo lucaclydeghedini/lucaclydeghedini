@@ -1,10 +1,26 @@
-- 👋 Hi, I’m @lucaclydeghedini
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unblock Example</title>
+    <style>
+       .blocked {
+          display: none;
+       }
+    </style>
+</head>
+<body>
+    <hl>Blocked Content</h1>
+    <p class="blocked"> This content is blocked. </p>
+    <button
+onclick="unblock()"Click to Unblock</button>
 
-<!---
-lucaclydeghedini/lucaclydeghedini is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+<script>
+    function unblock()  {
+        var blockedContent = 
+document.querySelector('blocked');
+
+blockedContent.style.display = 'block';
+      }
+    </script>
+</body>
+</html>
